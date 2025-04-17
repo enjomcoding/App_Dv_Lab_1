@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mask Detection</title>
+
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    #status-text {
+      transition: color 0.5s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+    <div class="div">
+      <img class="image" src="image.png" alt="Mask Reminder" x`/>
+      
+      <div class="text-wrapper">WEAR YOUR MASK PROPERLY!</div>
+      
+      <div class="overlap-group">
+        <div class="rectangle" id="webcam-container"></div>
+
+        <div class="rectangle-2"></div>
+
+        <div class="text-wrapper-2" id="status-text">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TensorFlow JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+  <script src="teachable-tfjs.js"></script>
+</body>
+</html>
